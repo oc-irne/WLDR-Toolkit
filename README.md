@@ -1,4 +1,4 @@
-# WELDER Toolkit – Timeline
+# WLDR Toolkit – Timeline
 
 A TamperMonkey script that enhances WELDER timeline features.
 
@@ -12,12 +12,10 @@ Click the link below to install TamperMonkey:
 
 ---
 
-## Step 2: Load WELDER Toolkit
+## Step 2: Load WLDR Toolkit
 
-Click the link below to load WELDER Toolkit:
+Click the link below to load WLDR Toolkit:
 
-👉 **[Install WELDER Toolkit – Timeline](https://raw.githubusercontent.com/enricowelder/WELDER-Toolkit/main/WELDER%20Toolkit%20-%20Timeline.user.js)**
-
-Tampermonkey will open an install prompt automatically.
+👉 **[Install WLDR Toolkit – Timeline](https://raw.githubusercontent.com/enricowelder/WLDR-Toolkit/main/WLDR%20Toolkit%20-%20Timeline.user.js)**
 
 ---
