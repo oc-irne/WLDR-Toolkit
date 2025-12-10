@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         WELDER Toolkit - Timeline
 // @namespace    https://welder.nl/
-// @version      0.1
+// @version      0.0.1
 // @description  Post Finder, Top5, CSV Export, Engagement Graph, Pinned Detector, Active Accounts Leaderboard
 // @author       Enrico Rijken
 // @match        https://*.welder.nl/*
@@ -827,7 +827,7 @@
             </div>
 
             <hr style="margin:12px 0;">
-            <div class="small-label">v0.1 — Enrico Rijken</div>
+            <div class="small-label">v0.0.1 — Enrico Rijken</div>
         `;
         document.body.appendChild(panel);
 
