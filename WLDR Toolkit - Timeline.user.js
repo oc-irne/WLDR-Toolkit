@@ -829,7 +829,7 @@
             </div>
 
             <hr style="margin:12px 0;">
-            <div class="small-label">v0.0.3 — Prototype</div>
+            <div class="small-label">v0.0.4 — Prototype</div>
         `;
         document.body.appendChild(panel);
 
