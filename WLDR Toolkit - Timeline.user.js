@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         WLDR Toolkit - Timeline
 // @namespace    https://github.com/oc-irne/WLDR-Toolkit/blob/main/README.md
-// @version      0.1.4
+// @version      0.1.5
 // @updateURL    https://raw.githubusercontent.com/oc-irne/WLDR-Toolkit/refs/heads/main/WLDR%20Toolkit%20-%20Timeline.user.js
 // @downloadURL  https://raw.githubusercontent.com/oc-irne/WLDR-Toolkit/refs/heads/main/WLDR%20Toolkit%20-%20Timeline.user.js
 // @description  Post Finder, Top5, CSV Export, Engagement Graph, Pinned Detector, Active Accounts Leaderboard
@@ -769,30 +769,7 @@
         /******** FLOATING BUTTON ********/
         const btn = document.createElement("div");
         btn.id = "welderToolkitBtn";
-        btn.innerHTML = `
-<svg
-  xmlns="http://www.w3.org/2000/svg"
-  viewBox="0 0 546 356"
-  class="wldricon"
-  aria-hidden="true"
-  style="width: 1.5em; height: 1.5em; vertical-align: middle;"
->
-  <style>
-    .s0 { fill: #FFF; }
-  </style>
-  <g>
-    <path fill-rule="evenodd" class="s0"
-      d="m247.94 253.13c14.7 36.75-2.94 79.41-39.71 95.58-36.77 14.7-79.41-2.94-94.12-39.71l-86.76-207.35c-14.7-38.23 2.95-80.88 39.7-95.58 36.76-14.71 79.42 2.94 94.13 39.71zm180.87 1.48c14.72 36.76-2.94 79.41-39.7 94.12-36.78 16.17-79.41-1.48-94.13-38.23l-86.76-208.83c-16.17-36.77 1.47-79.41 39.72-94.12 36.75-16.18 79.42 1.46 94.11 38.23zm110.29-160.3c14.72 38.23-2.94 79.41-39.7 94.12-38.25 16.17-79.41-2.95-95.6-39.72l-19.11-47.05c-3.55-8.88-5.3-18.37-5.15-27.93 0.15-9.56 2.21-18.99 6.04-27.75 3.83-8.76 9.36-16.67 16.28-23.27 6.91-6.6 15.07-11.75 24-15.17 36.78-16.17 79.41 2.94 94.14 39.71z"
-    />
-    <path fill-rule="evenodd" class="s0"
-      d="m365.83 273.93l49.87-20.65c6.12-2.54 13.14 0.37 15.68 6.49l20.66 49.87c2.53 6.12-0.38 13.14-6.5 15.68l-49.87 20.66c-6.12 2.53-13.14-0.38-15.68-6.5l-20.65-49.87c-2.54-6.12 0.37-13.14 6.49-15.68z"
-    />
-    <path fill-rule="evenodd" class="s0"
-      d="m9.83 29.93l49.87-20.65c6.12-2.54 13.14 0.37 15.68 6.49l20.66 49.87c2.53 6.12-0.38 13.14-6.5 15.68l-49.87 20.66c-6.12 2.53-13.14-0.38-15.68-6.5l-20.65-49.87c-2.54-6.12 0.37-13.14 6.49-15.68z"
-    />
-  </g>
-</svg>
-`;
+        btn.innerHTML = `<span style="font-size: 1.5em; vertical-align: middle;">🔧</span>`;
         btn.style.cssText = `
             position:fixed;
             bottom:20px;
@@ -828,28 +805,7 @@
         `;
         panel.innerHTML = `
             <div style="font-weight:bold;display:flex;align-items:center;gap:6px;margin-bottom:10px;">
-                <svg
-  xmlns="http://www.w3.org/2000/svg"
-  viewBox="0 0 546 356"
-  class="wldr-logoicon"
-  aria-hidden="true"
-  style="height: 22px; width: auto;"
->
-  <style>
-    .s1wldr { fill: var(--primary); }
-  </style>
-  <g>
-    <path fill-rule="evenodd" class="s1wldr"
-      d="m247.94 253.13c14.7 36.75-2.94 79.41-39.71 95.58-36.77 14.7-79.41-2.94-94.12-39.71l-86.76-207.35c-14.7-38.23 2.95-80.88 39.7-95.58 36.76-14.71 79.42 2.94 94.13 39.71zm180.87 1.48c14.72 36.76-2.94 79.41-39.7 94.12-36.78 16.17-79.41-1.48-94.13-38.23l-86.76-208.83c-16.17-36.77 1.47-79.41 39.72-94.12 36.75-16.18 79.42 1.46 94.11 38.23zm110.29-160.3c14.72 38.23-2.94 79.41-39.7 94.12-38.25 16.17-79.41-2.95-95.6-39.72l-19.11-47.05c-3.55-8.88-5.3-18.37-5.15-27.93 0.15-9.56 2.21-18.99 6.04-27.75 3.83-8.76 9.36-16.67 16.28-23.27 6.91-6.6 15.07-11.75 24-15.17 36.78-16.17 79.41 2.94 94.14 39.71z"
-    />
-    <path fill-rule="evenodd" class="s1wldr"
-      d="m365.83 273.93l49.87-20.65c6.12-2.54 13.14 0.37 15.68 6.49l20.66 49.87c2.53 6.12-0.38 13.14-6.5 15.68l-49.87 20.66c-6.12 2.53-13.14-0.38-15.68-6.5l-20.65-49.87c-2.54-6.12 0.37-13.14 6.49-15.68z"
-    />
-    <path fill-rule="evenodd" class="s1wldr"
-      d="m9.83 29.93l49.87-20.65c6.12-2.54 13.14 0.37 15.68 6.49l20.66 49.87c2.53 6.12-0.38 13.14-6.5 15.68l-49.87 20.66c-6.12 2.53-13.14-0.38-15.68-6.5l-20.65-49.87c-2.54-6.12 0.37-13.14 6.49-15.68z"
-    />
-  </g>
-</svg>
+                <span style="font-size: 1.5em; vertical-align: middle;">🔧</span>
 
                 <span>Toolkit</span>
             </div>
@@ -971,30 +927,7 @@
 
             } else {
                 // CLOSE MAIN TOOLKIT
-                btn.innerHTML = `
-<svg
-  xmlns="http://www.w3.org/2000/svg"
-  viewBox="0 0 546 356"
-  class="wldricon"
-  aria-hidden="true"
-  style="width: 1.5em; height: 1.5em; vertical-align: middle;"
->
-  <style>
-    .s0wldr { fill: #FFF; }
-  </style>
-  <g>
-    <path fill-rule="evenodd" class="s0wldr"
-      d="m247.94 253.13c14.7 36.75-2.94 79.41-39.71 95.58-36.77 14.7-79.41-2.94-94.12-39.71l-86.76-207.35c-14.7-38.23 2.95-80.88 39.7-95.58 36.76-14.71 79.42 2.94 94.13 39.71zm180.87 1.48c14.72 36.76-2.94 79.41-39.7 94.12-36.78 16.17-79.41-1.48-94.13-38.23l-86.76-208.83c-16.17-36.77 1.47-79.41 39.72-94.12 36.75-16.18 79.42 1.46 94.11 38.23zm110.29-160.3c14.72 38.23-2.94 79.41-39.7 94.12-38.25 16.17-79.41-2.95-95.6-39.72l-19.11-47.05c-3.55-8.88-5.3-18.37-5.15-27.93 0.15-9.56 2.21-18.99 6.04-27.75 3.83-8.76 9.36-16.67 16.28-23.27 6.91-6.6 15.07-11.75 24-15.17 36.78-16.17 79.41 2.94 94.14 39.71z"
-    />
-    <path fill-rule="evenodd" class="s0wldr"
-      d="m365.83 273.93l49.87-20.65c6.12-2.54 13.14 0.37 15.68 6.49l20.66 49.87c2.53 6.12-0.38 13.14-6.5 15.68l-49.87 20.66c-6.12 2.53-13.14-0.38-15.68-6.5l-20.65-49.87c-2.54-6.12 0.37-13.14 6.49-15.68z"
-    />
-    <path fill-rule="evenodd" class="s0wldr"
-      d="m9.83 29.93l49.87-20.65c6.12-2.54 13.14 0.37 15.68 6.49l20.66 49.87c2.53 6.12-0.38 13.14-6.5 15.68l-49.87 20.66c-6.12 2.53-13.14-0.38-15.68-6.5l-20.65-49.87c-2.54-6.12 0.37-13.14 6.49-15.68z"
-    />
-  </g>
-</svg>
-`;
+                btn.innerHTML = `<span style="font-size: 1.5em; vertical-align: middle;">🔧</span>`;
                 btn.classList.remove("open");
                 panel.classList.remove("open");
 
