@@ -1,5 +1,5 @@
-# WLDR Toolkit – Setup
-<img width="79" height="26" alt="image" src="https://github.com/user-attachments/assets/52400e95-1c54-4e1a-946c-e822d7f9a150"/>
+# <img width="40" height="26" alt="image" src="https://github.com/user-attachments/assets/4b41aebe-6322-4801-bf54-566d48b5afa8" /> Toolkit – Setup
+
 
 A TamperMonkey script that enhances platforms with extra WLDR toolkit features.
 
