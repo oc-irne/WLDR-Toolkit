@@ -24,7 +24,7 @@
   viewBox="0 0 546 356"
   class="wldr-logoicon"
   aria-hidden="true"
-  style="height: 22px; width: auto;"
+  style="height: 2.40625rem; width: auto;"
 >
   <style>
     .s1wldrfulllogo { fill: var(--primary); }
